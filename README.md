@@ -6,7 +6,7 @@ Nesse repositório é usado o conceito de acesso acesso a dados com Dapper usand
 
 Nesse projeto foi usado o Azure Sql Edge em um container no Docker, seguindo a própria instrução do pacote <a href="https://hub.docker.com/_/microsoft-azure-sql-edge">(SQL EDGE)</a>
 
-Porém podemos rodar um servidor Sql Edge ou Sql Server, e executar os scripts que disponibilizei neste repositório (SCRIPTS)
+Porém podemos rodar um servidor Sql Edge ou Sql Server, e executar os scripts que disponibilizei neste repositório  <a href="https://github.com/zWeeeeelll/dapper/tree/main/scripts-para-o-banco">(SCRIPTS)</a>
 
 # Iniciando o projeto
 
