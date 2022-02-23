@@ -10,8 +10,41 @@ Porém podemos rodar um servidor Sql Edge ou Sql Server, e executar os scripts q
 
 # Iniciando o projeto
 
-Dentro do arquivo Program.cs, temos a variavel de configuração do banco, indique as informações corretas para conexão ao banco que criamos com os scripts
+Dentro do arquivo Program.cs, temos a constante ```connectionString``` de configuração do banco no método ```Main``` , indique as informações corretas para conexão ao banco que criamos com os scripts
+```csharp
+ const string connectionString = "Server=localhost,1433;Database=banco;User ID=sa;Password=YOURPASSWORD";
+```
 
 # Utilizando o projeto
 
 No mesmo arquivo Program.cs, no método main, temos a chamada para cada funcionalidade de acesso a dados com Dapper, retire o comentário de qual queria visualizar o comportamneto, e execute o projeto.
+
+```csharp
+ static void Main(string[] args)
+        {
+            const string connectionString = "Server=localhost,1433;Database=banco;User ID=sa;Password=YOURPASSWORD";
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                //ListCategories(connection);
+                //CreateCategory(connection);
+                //UpdateCategory(connection);
+                //DeleteCategory(connection)k
+                //CreateManyCategory(connection);
+                //ListCategories(connection);
+                //ExecuteProcedure(connection);
+                //ExecuteReadProcedure(connection);
+                //ExecuteScalar(connection);
+                //ReadView(connection);
+                //OneToOne(connection);
+                //OneToMany(connection);
+                //QueryMultiple(connection);
+                //SelectIn(connection);
+                //Like(connection, "api");
+                Transaction(connection);
+
+            }
+
+            ;
+        }
+```
